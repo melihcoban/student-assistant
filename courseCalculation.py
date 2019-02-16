@@ -23,7 +23,7 @@ def calculation(midterm, final):
         grade = "FF"
     print("Average: " + str(result))
     print("Grade: " + str(grade))
-
+    print("------------")
 # Ask user to how many times they would like to calculate
 
 repeatNumber = int(input("How many courses you would like to calculate?: "))
