@@ -1,7 +1,7 @@
 # Calculate final result and print according to it
 
 def calculation(midterm, final):
-    result = midterm * 40 / 100 + final * 60 / 100
+    result = int(midterm) * 40 / 100 + int(final) * 60 / 100
     result = int(result)
     if 90 <= result <= 100:
         grade = "AA"
@@ -24,10 +24,14 @@ def calculation(midterm, final):
     print("Average: " + str(result))
     print("Grade: " + str(grade))
     print("------------")
-# Ask user to how many times they would like to calculate
+    result = ("Average: " + str(result) + " Grade: " + grade)
+    return result
 
+# Ask user to how many times they would like to calculate
+"""
 repeatNumber = int(input("How many courses you would like to calculate?: "))
 for i in range(repeatNumber):
     midterm = int(input("Midterm: "))
     final = int(input("Final: "))
     calculation(midterm, final)
+"""
