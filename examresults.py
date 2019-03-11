@@ -76,7 +76,7 @@ for identity in courseIdentity:
 		print("Midterm Result: " + courseResult[1])
 		print("Final Result: " + courseResult[5])
 		print("Additional Result: " + courseResult[3])
-		print ("Grade: " + ', '.join(courseGrade))
+		print("Grade: " + ', '.join(courseGrade))
 	elif examNumber > 3:
 		if re.search(r'İ', str(courseName)) is not None:
 			print(courseName)
