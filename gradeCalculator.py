@@ -28,10 +28,9 @@ def calculation(midterm, final):
     return result
 
 # Ask user to how many times they would like to calculate
-"""
+
 repeatNumber = int(input("How many courses you would like to calculate?: "))
 for i in range(repeatNumber):
     midterm = int(input("Midterm: "))
     final = int(input("Final: "))
     calculation(midterm, final)
-"""
