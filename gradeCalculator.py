@@ -1,5 +1,7 @@
 # Calculate final result and print according to it
 
+# 
+
 def calculation(midterm, final):
     result = int(midterm) * 40 / 100 + int(final) * 60 / 100
     result = int(result)
@@ -21,10 +23,10 @@ def calculation(midterm, final):
         grade = "FD"
     elif 0 <= result <= 50:
         grade = "FF"
-    print("Average: " + str(result))
-    print("Grade: " + str(grade))
-    print("------------")
-    result = ("Average: " + str(result) + " Grade: " + grade)
+#    print("Average: " + str(result))
+#    print("Grade: " + str(grade))
+#    print("------------")
+    result = ("Average: {}\nGrade: {}".format(result, grade))
     return result
 
 # Ask user to how many times they would like to calculate
@@ -34,3 +36,4 @@ for i in range(repeatNumber):
     midterm = int(input("Midterm: "))
     final = int(input("Final: "))
     calculation(midterm, final)
+    print(calculation)

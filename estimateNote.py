@@ -3,6 +3,7 @@ import re
 from decimal import Decimal
 
 midterm = int(input("Midterm Note: "))
+print("-"*17)
 midterm = midterm * 40 / 100
 estimatedNote = []
 for i in range(50, 101):
@@ -13,8 +14,6 @@ for i in range(50, 101):
     estimatedNote.append(result)
 finalNote = []
 n = int(50)
-#print("Final Note    Estimated Note")
-#print("----------    --------------")
 for i in range(len(estimatedNote)):
 #    print(str(n) + "                  " + str(estimatedNote[i]))
     finalNote.append(n)
