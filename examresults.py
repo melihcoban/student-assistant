@@ -2,14 +2,13 @@ import requests
 import re
 import getpass
 
-# Ask for login crediantials to user, @ogr.deu.edu.tr is not needed
+# Ask for debis login crediantials to user, @ogr.deu.edu.tr is not needed
 
+print("Welcome Melih, ")
 print("Type without @ogr.deu.edu.tr")
 username = input("Username: ")
 password = getpass.getpass("Password: ")
-
 print("Select the semester!\n1- 2017-2018 Fall\n2- 2017-2018 Spring\n3- 2018-2019 Fall\n4- 2018-2019 Spring\n")
-
 
 menuChoice = int(input("Menu: "))
 if menuChoice == 1:
@@ -38,7 +37,7 @@ session_requests = requests.session()
 login_url = "http://debis.deu.edu.tr/OgrenciIsleri/Ogrenci/OgrenciNotu/index.php"
 
 result = session_requests.post(
-	login_url, 
+        login_url, 
 	data = payload
 )
 response = result.text
