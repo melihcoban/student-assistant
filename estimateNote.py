@@ -21,8 +21,9 @@ def calculate_notes(grade,grade_limit,final_notes, estimated_notes):
     if estimated_note:
         print("{}\nFinal Note: {}\nEstimated Note: {}".format(grade, final_note, estimated_note))
     else:
-        print("You can't get BA")
-
+        print("You can't get {}".format(grade))
+    """ Return list of estimated notes equivalent to final notes
+    estimated notes = midterm + final """
     return estimated_note
 
 midterm = int(input("Midterm Note: ")) 
@@ -30,7 +31,7 @@ print("-"*17)
 midterm = midterm * 40 / 100
 estimated_notes = []
 
-for i in range(50, 101):
+for i in range(0, 101):
     # Create a final note between 50-100 and add it to the list and then
     # sum up midterm note with final note and round it
     final = i * 60 / 100
@@ -40,7 +41,7 @@ for i in range(50, 101):
     estimated_notes.append(result)
 
 final_notes = []
-n = int(50)
+n = int(0)
 
 for i in range(len(estimated_notes)):
     # Append all of the available final notes to the list according to
