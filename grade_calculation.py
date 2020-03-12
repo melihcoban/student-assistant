@@ -27,6 +27,7 @@ def calculation(midterm, final):
 #    print("Grade: " + str(grade))
 #    print("------------")
     result = ("Average: {}\nGrade: {}".format(result, grade))
+    print(result)
     return result
 
 # Ask user to how many times they would like to calculate
@@ -36,4 +37,3 @@ for i in range(repeatNumber):
     midterm = int(input("Midterm: "))
     final = int(input("Final: "))
     calculation(midterm, final)
-    print(calculation)
